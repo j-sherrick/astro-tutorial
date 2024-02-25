@@ -1,4 +1,0 @@
----
-title: 'Display Installation'
-description:
----

@@ -1,21 +1,9 @@
 ---
-
+import SiteLayout from '../layouts/SiteLayout.astro';
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Integra Tech Support | Boots on the Ground Support, Right When You Need It.</title>
-	</head>
-	<body>
-		<a href="/" class="content-link">Home</a>
-    	<a href="/services/" class="content-link">Services</a>
-    	<a href="/about/" class="content-link">About</a>
-    	<a href="/blog/" class="content-link">Blog</a>
-
-		<h1>Astro</h1>
-	</body>
-</html>
+<SiteLayout title="Home">
+  <h1>Welcome to Astro</h1>
+  <p>
+	Astro is a new kind of static site builder that delivers lightning-fast performance and modern developer ergonomics.
+  </p>
+</SiteLayout>

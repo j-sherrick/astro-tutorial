@@ -1,0 +1,71 @@
+/* CSS Reset */
+
+/* Box sizing border-box for all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove list styles (bullets/numbers) */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove default hyperlink styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove default outline styles */
+button,
+input,
+textarea,
+select {
+    outline: none;
+}
+
+/* Set base font size and line height */
+/* Set default font family and font weight */
+/* Set default background and text color and text alignment */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    background-color: #fef;
+    color: #232;
+    text-align: left;
+}
+
+/* Set default max-width and center content */
+.container {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add CSS reset for other elements as needed */

@@ -8,7 +8,7 @@ At Integra Tech Support, we pride ourselves on offering comprehensive tech suppo
 
 ## Project Overview
 
-This repository houses the code for my website redesign, a solo project developed by yours truly from the ground up, using Astro. The project reflects my the current state of my knowledge and dedication to utilizing cutting-edge web technologies, including HTML5, CSS3, JavaScript, and TypeScript, to create a fast, responsive, and visually appealing online presence that not only drives sales but also showcases my technical prowess.
+This repository houses the code for my website redesign, a project developed using Astro. The project reflects the current state of my knowledge and dedication to utilizing cutting-edge web technologies, including HTML, CSS, JavaScript, and TypeScript, to create a fast, responsive, and visually appealing online presence that not only drives sales, but also showcases my technical prowess.
 
 ## Technologies Used
 
@@ -21,14 +21,14 @@ This repository houses the code for my website redesign, a solo project develope
 
 ### 🚀 Why Astro?
 
-Astro stands as a cutting-edge web framework designed to empower developers in crafting swift websites that lean on minimal client-side JavaScript. This choice highlights my personal preference for performance and efficiency, steering clear of bulkier frameworks like WordPress, to ensure a superior user experience. It showcases my agility and proficiency in navigating the fast-paced world of web development, all while providing a development experience that is delightfully engaging and satisfying.
+Astro stands as a cutting-edge web framework designed to empower developers in crafting swift websites that lean on minimal client-side JavaScript. This choice highlights my personal preference for performance and efficiency (steering clear of bulkier frameworks like WordPress), to ensure a superior user experience. Astro provides a development experience that is delightfully engaging and satisfying, while showcasing my proficiency in navigating the fast-paced world of web development frameworks.
 
 ## Features
 
-- *Custom Astro Theme*: Tailored specifically for Integra Tech Support, showcasing our brand and the services we offer.
-- *Responsive Design*: Ensures a seamless user experience across all devices.
-- *Optimized Performance*: Leveraging Astro's capabilities for a fast-loading website, improving SEO and user engagement.
-- *Dynamic Content*: Showcasing company projects, services, and the industries we serve with interactive elements and up-to-date information.
-- *Tech Stack Showcase*: Demonstrates expertise in HTML, CSS, JavaScript, TypeScript, and Astro.
+- **Custom Astro Theme**: Tailored specifically for Integra Tech Support, showcasing our brand and the services we offer.
+- **Responsive Design**: Ensures a seamless user experience across all devices.
+- **Optimized Performance**: Leveraging Astro's capabilities for a fast-loading website, improving SEO and user engagement.
+- **Dynamic Content**: Showcasing company projects, services, and the industries we serve with interactive elements and up-to-date information.
+- **Tech Stack Showcase**: Demonstrates expertise in HTML, CSS, JavaScript, TypeScript, and Astro.
 
 ## 👀 Want to learn more?

@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 /* Remove default margin and padding */
 body,
 h1,
@@ -38,6 +42,7 @@ ol {
 a {
     text-decoration: none;
     color: inherit;
+    font-weight: inherit;
 }
 
 /* Remove default outline styles */
@@ -46,26 +51,24 @@ input,
 textarea,
 select {
     outline: none;
+    border: none;
+}
+
+/* Make the default button behave like a link */
+button {
+    cursor: pointer;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: inherit;
 }
 
 /* Set base font size and line height */
 /* Set default font family and font weight */
 /* Set default background and text color and text alignment */
 body {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
-    font-family: Arial, sans-serif;
+    font-family: Poppins, system-ui, sans-serif;
     font-weight: normal;
-    background-color: #fef;
-    color: #232;
-    text-align: left;
 }
 
-/* Set default max-width and center content */
-.container {
-    max-width: 75rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Add CSS reset for other elements as needed */

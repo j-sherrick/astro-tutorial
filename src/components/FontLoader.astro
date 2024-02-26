@@ -1,3 +1,9 @@
 ---
-const fonts: FontFace[] = await Astro.glob('public/fonts/poppins/*.woff');
+// load the whole fonts directory
+const fontsGlob = await Astro.glob('/public/assets/fonts/*.woff');
+const fonts: string[] = fontsGlob.map( font => font.default.split('/public')[1] );
 ---
+<!-- Fonts Loaded by Integra Tech FontLoader.astro  -->
+{fonts.map( (font) => (
+    <link rel="preload" href={font} as="font" type="font/woff" crossorigin />
+))}

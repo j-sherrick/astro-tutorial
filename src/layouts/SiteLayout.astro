@@ -1,5 +1,7 @@
 ---
 import '../styles/main.css';
+import '../styles/variables.css';
+import FontLoader from '../components/FontLoader.astro';
 import Header from '../components/Header.astro';
 const { title } = Astro.props;
 ---
@@ -9,6 +11,10 @@ const { title } = Astro.props;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <FontLoader />
+
+    <link rel="stylesheet" href="public/assets/css/reset.css">
     <title>{title} | Integra Tech Support</title>
 </head>
 <body>

@@ -1,7 +1,9 @@
 {
-  "name": "",
+  "name": "integra-tech-support",
   "type": "module",
   "version": "0.0.1",
+  "description": "Custom Astro theme for Integra Tech Support, a dynamic business providing unparalleled 'boots on the ground' tech support in the Chicagoland area.",
+  "homepage": "https://integra-tech-support.netlify.app/",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

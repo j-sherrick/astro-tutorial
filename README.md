@@ -21,7 +21,7 @@ This repository houses the code for my website redesign, a project developed usi
 
 ### 🚀 Why Astro?
 
-Astro stands as a cutting-edge web framework designed to empower developers in crafting swift websites that lean on minimal client-side JavaScript. This choice highlights my personal preference for performance and efficiency (steering clear of bulkier frameworks like WordPress), to ensure a superior user experience. Astro provides a development experience that is delightfully engaging and satisfying, while showcasing my proficiency in navigating the fast-paced world of web development frameworks.
+Astro is a cutting-edge web framework designed to empower developers in crafting swift websites that lean on minimal client-side JavaScript. This choice highlights my personal preference for performance and efficiency (steering clear of bulkier frameworks like WordPress), to ensure a superior user experience. Astro provides a development experience that is delightfully engaging and satisfying, while showcasing my proficiency in navigating the fast-paced world of web development frameworks.
 
 ## Features
 

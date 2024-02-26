@@ -1,0 +1,9 @@
+---
+import { Image } from 'astro:assets';
+const iconGlob = await Astro.glob('../assets/icons/*.svg');
+const icons = iconGlob.map((icon) => {
+    return icon.default
+});
+console.log(icons);
+---
+<!-- UIcons by https://www.flaticon.com/uicons -->

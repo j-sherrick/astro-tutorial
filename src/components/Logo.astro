@@ -1,5 +1,22 @@
 ---
-
+import { Icon } from "astro-icon/components";
 ---
-<div class="logo-container">
+<div>
+    <Icon name="integra-logo" />
+    <h1>Integra Tech Support</h1>
 </div>
+
+<style>
+    div {
+        display: flex;
+        align-items: center;
+    }
+    h1 {
+        margin-left: 1rem;
+    }
+
+    [data-icon="integra-logo"] {
+        height: 3rem;
+        width: auto;
+    }
+</style>

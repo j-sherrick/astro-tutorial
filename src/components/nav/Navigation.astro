@@ -1,0 +1,93 @@
+---
+interface Props {
+    class?: string
+}
+
+import Logo from '@components/Logo.astro';
+import Phone from '@components/Phone.astro';
+import Menu from '@components/nav/Menu.astro';
+import Dropdown from '@components/nav/Dropdown.astro';
+
+const { class: className } = Astro.props;
+---
+<nav class:list={[className]}>
+    <Logo />
+    <Menu class="topnav">
+        <Dropdown title="Services">
+            <Menu class="dropdown">
+                <li class="dropdown-link"><a href="/services/">Audio Visual</a></li>
+                <li class="dropdown-link"><a href="/services/">Display Installation</a></li>
+                <li class="dropdown-link"><a href="/services/">Low-Voltage Cabling</a></li>
+                <li class="dropdown-link"><a href="/services/">Network Installation</a></li>
+                <li class="dropdown-link"><a href="/services/">Video Conferencing</a></li>
+                <li class="dropdown-link"><a href="/services/">Point of Sale</a></li>
+            </Menu>
+        </Dropdown>
+    
+        <Dropdown title="Industries">
+            <Menu class="dropdown">
+                <li class="dropdown-link"><a href="/industries/">Commercial</a></li>
+                <li class="dropdown-link"><a href="/industries/">Office</a></li>
+                <li class="dropdown-link"><a href="/industries/">Retail</a></li>
+                <li class="dropdown-link"><a href="/industries/">Hospitality</a></li>
+                <li class="dropdown-link"><a href="/industries/">Healthcare</a></li>
+            </Menu>
+        </Dropdown>
+        
+        <li class="menu-link"><a href="/blog/">Blog</a></li>
+        <li class="menu-link"><a href="/about/">About Us</a></li>
+    </Menu>
+    <Phone />
+</nav>
+
+<style>
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+
+        li {
+            color: var(--selective-yellow);
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+    }
+
+    .menu-button {
+
+        button {
+            background-color: transparent;
+        }
+
+        &:hover .dropdown-menu {
+            display: block;
+        }
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .dropdown-nav {flex: 2;}
+
+    .dropdown-link {
+        padding: 0.5rem 1rem;
+    }
+
+    .menu-link {
+        
+    }
+</style>

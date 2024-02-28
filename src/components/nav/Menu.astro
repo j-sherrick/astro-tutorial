@@ -1,0 +1,20 @@
+---
+interface Props {
+    class?: string;
+}
+const { class: className } = Astro.props;
+---
+
+<menu class:list={[className]}>
+    <slot />
+</menu>
+
+<style>
+    .dropdown {
+
+    }
+
+    .navbar {
+        
+    }
+</style>

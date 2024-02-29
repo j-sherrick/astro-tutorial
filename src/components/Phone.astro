@@ -1,18 +1,27 @@
 ---
 import { Icon } from "astro-icon/components";
 ---
-<div>
-    <Icon name="fi-sr-phone-call" />
-    <span>(224) 303-0323</span>
-</div>
+<button>
+    <a href="tel:+12243030323">
+        <Icon name="fi-sr-phone-call" />
+        <span>(224) 303-0323</span>
+    </a>
+</button>
 
 <style>
-    div {
+
+    button * {
+        color: #00a7f2;
+    }
+    
+    a {
         display: flex;
         align-items: center;
-        gap: .5rem;
+        gap: .75rem;
+        font-size: 1.175rem;
     }
 
-    span {
+    [data-icon="fi-sr-phone-call"] {
+        font-size: 1.5rem;
     }
 </style>

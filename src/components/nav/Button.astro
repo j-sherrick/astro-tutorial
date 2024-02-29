@@ -1,0 +1,14 @@
+---
+interface Props {
+    class?: string
+    title: string
+}
+
+
+const { class: className, title } = Astro.props;
+---
+<button
+class:list={["toggle", className]}
+aria-pressed="false">
+    <span>{title}</span>
+</button>

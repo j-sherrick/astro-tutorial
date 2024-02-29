@@ -1,10 +1,13 @@
 ---
-import SiteLayout from '../layouts/SiteLayout.astro';
+import SiteLayout from '@layouts/SiteLayout.astro';
+import Container from '@components/Container.astro';
 import '../styles/main.css';
 ---
 <SiteLayout title="Home">
   <main>
-    <h1>Welcome to Integra Tech Support</h1>
+    <Container>
+      <h1>Welcome to Integra Tech Support</h1>
+    </Container>
   </main>
 </SiteLayout>
 
@@ -15,8 +18,5 @@ import '../styles/main.css';
     align-items: center;
     justify-content: center;
     height: 100vh;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
 </style>

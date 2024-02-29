@@ -1,13 +1,10 @@
 ---
 interface Props {
-    title: string,
-    class?: string
+    class?: string,
+    title?: string
 }
 const { class: className, title } = Astro.props;
 ---
-<li>
-    <button class:list={["toggle", className]}>
-        <span>{title}</span>
-    </button>
+<li class:list={[className]}>
     <slot />
 </li>

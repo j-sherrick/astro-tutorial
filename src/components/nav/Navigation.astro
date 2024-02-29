@@ -7,87 +7,94 @@ import Logo from '@components/Logo.astro';
 import Phone from '@components/Phone.astro';
 import Menu from '@components/nav/Menu.astro';
 import Dropdown from '@components/nav/Dropdown.astro';
+import Container from '@components/Container.astro';
+import Button from '@components/nav/Button.astro';
 
 const { class: className } = Astro.props;
 ---
 <nav class:list={[className]}>
-    <Logo />
-    <Menu class="topnav">
-        <Dropdown title="Services">
-            <Menu class="dropdown">
-                <li class="dropdown-link"><a href="/services/">Audio Visual</a></li>
-                <li class="dropdown-link"><a href="/services/">Display Installation</a></li>
-                <li class="dropdown-link"><a href="/services/">Low-Voltage Cabling</a></li>
-                <li class="dropdown-link"><a href="/services/">Network Installation</a></li>
-                <li class="dropdown-link"><a href="/services/">Video Conferencing</a></li>
-                <li class="dropdown-link"><a href="/services/">Point of Sale</a></li>
-            </Menu>
-        </Dropdown>
     
-        <Dropdown title="Industries">
-            <Menu class="dropdown">
-                <li class="dropdown-link"><a href="/industries/">Commercial</a></li>
-                <li class="dropdown-link"><a href="/industries/">Office</a></li>
-                <li class="dropdown-link"><a href="/industries/">Retail</a></li>
-                <li class="dropdown-link"><a href="/industries/">Hospitality</a></li>
-                <li class="dropdown-link"><a href="/industries/">Healthcare</a></li>
-            </Menu>
-        </Dropdown>
+    <div class="edge-container left">
+        <Logo />
+    </div>
+
+    <div class="menu-container">
+        <Menu class="navigation">
+            <Dropdown title="Services">
+                <Button title="Services" />
+                <Menu class="dropdown">
+                    <li class="dropdown-link"><a href="/services/">Audio Visual</a></li>
+                    <li class="dropdown-link"><a href="/services/">Display Installation</a></li>
+                    <li class="dropdown-link"><a href="/services/">Low-Voltage Cabling</a></li>
+                    <li class="dropdown-link"><a href="/services/">Network Installation</a></li>
+                    <li class="dropdown-link"><a href="/services/">Video Conferencing</a></li>
+                    <li class="dropdown-link"><a href="/services/">Point of Sale</a></li>
+                </Menu>
+            </Dropdown>
         
-        <li class="menu-link"><a href="/blog/">Blog</a></li>
-        <li class="menu-link"><a href="/about/">About Us</a></li>
-    </Menu>
-    <Phone />
+            <Dropdown title="Industries">
+                <Button title="Industries" />
+                <Menu class="dropdown">
+                    <li class="dropdown-link"><a href="/industries/">Commercial</a></li>
+                    <li class="dropdown-link"><a href="/industries/">Office</a></li>
+                    <li class="dropdown-link"><a href="/industries/">Retail</a></li>
+                    <li class="dropdown-link"><a href="/industries/">Hospitality</a></li>
+                    <li class="dropdown-link"><a href="/industries/">Healthcare</a></li>
+                </Menu>
+            </Dropdown>
+
+            <Dropdown title="Brands">
+                <Button title="Brands" />
+                <Menu class="dropdown">
+                    <li class="dropdown-link"><a href="/industries/">Commercial</a></li>
+                    <li class="dropdown-link"><a href="/industries/">Office</a></li>
+                    <li class="dropdown-link"><a href="/industries/">Retail</a></li>
+                    <li class="dropdown-link"><a href="/industries/">Hospitality</a></li>
+                    <li class="dropdown-link"><a href="/industries/">Healthcare</a></li>
+                </Menu>
+            </Dropdown>
+            <li class="menu-link"><a href="/blog/">Blog</a></li>
+            <li class="menu-link"><a href="/about/">About</a></li>
+        </Menu>
+    </div>
+    
+    <div class="edge-container right">
+        <Phone />
+    </div>
 </nav>
 
 <style>
-    .navigation {
+    nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+        padding: 1rem 2rem;
     }
-    
-    .menu {
+
+    nav * {
+        color: #00a7f2;
+    }
+
+    .edge-container {
+        flex: 1;
+    }
+
+    .left {
         display: flex;
+        justify-content: flex-start;
+    }
+
+    .right {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-container {
+        flex-grow: 2;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        gap: 1rem;
-        position: relative;
-
-        li {
-            color: var(--selective-yellow);
-            font-size: 1rem;
-            font-weight: 600;
-        }
-
     }
 
-    .menu-button {
-
-        button {
-            background-color: transparent;
-        }
-
-        &:hover .dropdown-menu {
-            display: block;
-        }
-    }
-
-    .dropdown-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        z-index: 1;
-    }
-
-    .dropdown-nav {flex: 2;}
-
-    .dropdown-link {
-        padding: 0.5rem 1rem;
-    }
-
-    .menu-link {
-        
-    }
 </style>

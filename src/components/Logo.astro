@@ -3,20 +3,33 @@ import { Icon } from "astro-icon/components";
 ---
 <div>
     <Icon name="integra-logo" />
-    <h1>Integra Tech Support</h1>
+    <h1><span class="big">Integra</span><span class="small">Tech Support</span></h1>
 </div>
 
 <style>
     div {
         display: flex;
         align-items: center;
+        gap: .5rem;
+        flex-shrink: 0;
     }
+
     h1 {
-        margin-left: 1rem;
+        letter-spacing: .01rem;
+    }
+
+    .big {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .small {
+        font-size: 1.5rem;
+        font-weight: 400;
     }
 
     [data-icon="integra-logo"] {
-        height: 3rem;
+        height: 2rem;
         width: auto;
     }
 </style>

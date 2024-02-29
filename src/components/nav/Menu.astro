@@ -10,11 +10,25 @@ const { class: className } = Astro.props;
 </menu>
 
 <style>
-    .dropdown {
+
+    menu {
 
     }
 
-    .navbar {
-        
+    .dropdown {
+        display: none;
+        position: absolute;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 2rem;
+    }
+    
+    .navigation * {
+        letter-spacing: 0.075rem;
+        font-size: 2rem;
     }
 </style>

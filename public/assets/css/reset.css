@@ -34,8 +34,11 @@ dd {
 
 /* Remove list styles (bullets/numbers) */
 ul,
-ol {
+ol,
+menu,
+* li {
     list-style: none;
+    padding: 0;
 }
 
 /* Remove default hyperlink styles */
@@ -52,6 +55,8 @@ textarea,
 select {
     outline: none;
     border: none;
+    font-family: inherit;
+    font-weight: inherit;
 }
 
 /* Make the default button behave like a link */
@@ -60,6 +65,8 @@ button {
     color: inherit;
     font-size: 1rem;
     font-weight: inherit;
+    padding: 0;
+    background-color: transparent;
 }
 
 /* Set base font size and line height */

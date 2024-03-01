@@ -9,6 +9,7 @@ import Menu from '@components/nav/Menu.astro';
 import Dropdown from '@components/nav/Dropdown.astro';
 import Container from '@components/Container.astro';
 import Button from '@components/nav/Button.astro';
+import '@styles/layout/_navigation.scss'
 
 const { class: className } = Astro.props;
 ---
@@ -63,38 +64,8 @@ const { class: className } = Astro.props;
     </div>
 </nav>
 
-<style>
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 1rem 2rem;
-    }
+<style lang="scss">
 
-    nav * {
-        color: #00a7f2;
-    }
-
-    .edge-container {
-        flex: 1;
-    }
-
-    .left {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .right {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .menu-container {
-        flex-grow: 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
 
 </style>

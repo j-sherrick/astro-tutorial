@@ -1,2 +1,9 @@
 ---
+interface Props {
+    class?: string
+}
+
+const { class: className } = Astro.props;
 ---
+<section class:list={["hero", className]}>
+</section>

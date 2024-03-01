@@ -1,0 +1,41 @@
+// NAVIGATION BAR STYLING
+
+nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 2rem;
+
+        * {
+            color: #00a7f2;
+
+        }
+    }
+
+.edge-container {
+    flex: 1;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-container {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    * {
+        font-weight: 800;
+        font-size: 1.1rem;
+        letter-spacing: 0.09rem;
+    }
+}

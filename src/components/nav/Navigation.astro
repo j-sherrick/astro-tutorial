@@ -9,7 +9,135 @@ import Menu from '@components/nav/Menu.astro';
 import Dropdown from '@components/nav/Dropdown.astro';
 import Container from '@components/Container.astro';
 import Button from '@components/nav/Button.astro';
-import '@styles/layout/_navigation.scss'
+
+const navLinks = [
+    {
+        title: "Services",
+        type: "dropdown",
+        href: "/services",
+        content: [
+            {
+                title: "Audio Visual",
+                type: "link",
+                href: "/services"
+
+            },
+            {
+                title: "Display Installation",
+                type: "link",
+                href: "/services"
+            },
+            {
+                title: "Low-Voltage Cabling",
+                type: "link",
+                href: "/services"
+
+            },
+            {
+                title: "Network Installation",
+                type: "link",
+                href: "/services"
+            },
+            {
+                title: "Video Conferencing",
+                type: "link",
+                href: "/services"
+
+            },
+            {
+                title: "Point of Sale",
+                type: "link",
+                href: "/services"
+            }
+        ]
+    },
+    {
+        title: "Industries",
+        type: "dropdown",
+        href: "/industries",
+        content: [
+            {
+                title: "Commercial",
+                type: "link",
+                href: "/industries"
+
+            },
+            {
+                title: "Office",
+                type: "link"
+            },
+            {
+                title: "Retail",
+                type: "link"
+
+            },
+            {
+                title: "Hospitality",
+                type: "link"
+            },
+            {
+                title: "Healthcare",
+                type: "link"
+
+            }
+        ]
+    },
+    {
+        title: "Brands",
+        type: "dropdown",
+        href: "brands",
+        content: [
+            {
+                title: "Cisco",
+                type: "link",
+                href: "/brands"
+
+            },
+            {
+                title: "Polycom",
+                type: "link",
+                href: "/brands"
+            },
+            {
+                title: "Q-SYS",
+                type: "link",
+                href: "/brands"
+
+            },
+            {
+                title: "Biamp",
+                type: "link",
+                href: "/brands"
+            },
+            {
+                title: "Yealink",
+                type: "link",
+                href: "/brands"
+
+            },
+            {
+                title: "LG",
+                type: "link",
+                href: "/brands"
+            },
+            {
+                title: "Chief",
+                type: "link",
+                href: "/brands"
+            }
+        ]
+    },
+    {
+        title: "Blog",
+        type: "link",
+        href: "/blog"
+    },
+    {
+        title: "About",
+        type: "link",
+        blog: "/about"
+    }
+]
 
 const { class: className } = Astro.props;
 ---
@@ -20,43 +148,7 @@ const { class: className } = Astro.props;
     </div>
 
     <div class="menu-container">
-        <Menu class="navigation">
-            <Dropdown title="Services">
-                <Button title="Services" />
-                <Menu class="dropdown">
-                    <li class="dropdown-link"><a href="/services/">Audio Visual</a></li>
-                    <li class="dropdown-link"><a href="/services/">Display Installation</a></li>
-                    <li class="dropdown-link"><a href="/services/">Low-Voltage Cabling</a></li>
-                    <li class="dropdown-link"><a href="/services/">Network Installation</a></li>
-                    <li class="dropdown-link"><a href="/services/">Video Conferencing</a></li>
-                    <li class="dropdown-link"><a href="/services/">Point of Sale</a></li>
-                </Menu>
-            </Dropdown>
         
-            <Dropdown title="Industries">
-                <Button title="Industries" />
-                <Menu class="dropdown">
-                    <li class="dropdown-link"><a href="/industries/">Commercial</a></li>
-                    <li class="dropdown-link"><a href="/industries/">Office</a></li>
-                    <li class="dropdown-link"><a href="/industries/">Retail</a></li>
-                    <li class="dropdown-link"><a href="/industries/">Hospitality</a></li>
-                    <li class="dropdown-link"><a href="/industries/">Healthcare</a></li>
-                </Menu>
-            </Dropdown>
-
-            <Dropdown title="Brands">
-                <Button title="Brands" />
-                <Menu class="dropdown">
-                    <li class="dropdown-link"><a href="/brands/">Cisco</a></li>
-                    <li class="dropdown-link"><a href="/brands/">Polycom</a></li>
-                    <li class="dropdown-link"><a href="/brands/">Fortinet</a></li>
-                    <li class="dropdown-link"><a href="/brands/">Avaya</a></li>
-                    <li class="dropdown-link"><a href="/brands/">Brightsign</a></li>
-                </Menu>
-            </Dropdown>
-            <li class="menu-link"><a href="/blog/">Blog</a></li>
-            <li class="menu-link"><a href="/about/">About</a></li>
-        </Menu>
     </div>
     
     <div class="edge-container right">
@@ -65,7 +157,36 @@ const { class: className } = Astro.props;
 </nav>
 
 <style lang="scss">
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 2rem;
 
-    
+        * {
+            color: #00a7f2;
+        }
+    }
 
+    .edge-container {
+        flex: 1;
+    }
+
+    .left {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .right {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-container {
+        flex-grow: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
